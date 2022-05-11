@@ -83,7 +83,7 @@ time.sleep(delayt)
 # %%
 my3270.fill_field(6,18,'HERC01', 8)
 my3270.fill_field(7,18,'AUTOM', 8)
-my3270.fill_field(8,18,'MIFID', 8)
+my3270.fill_field(8,18,'DEMO', 8)
 my3270.move_to(12,24)
 my3270.delete_field()
 
@@ -193,7 +193,7 @@ my3270.send_string('LOGOFF')
 my3270.send_enter()
 my3270.wait_for_field()
 time.sleep(delayt)
-# disconnect from host and kill subprocess
+# Desconectamos y cerramos el emulador
 my3270.terminate()
 
 print('Hemos terminado')
